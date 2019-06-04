@@ -6,10 +6,10 @@ import java.io.Serializable;
 public class TwitterLifecycleManager implements LifecycleManager, Serializable {
 
 	private static final Logger logger = Logger.getLogger(TwitterLifecycleManager.class);
-	private static final String _consumerKey = System.getenv().get("CONSUMER_KEY");
-	private static final String _consumerSecret = System.getenv().get("CONSUMER_SECRET");
-	private static final String _accessToken = System.getenv().get("ACCESS_TOKEN");
-	private static final String _accessTokenSecret = System.getenv().get("ACCESS_TOKEN_SECRET");
+	private static final String _consumerKey = System.getenv().get("TWITTER_CONSUMER_KEY");
+	private static final String _consumerSecret = System.getenv().get("TWITTER_CONSUMER_SECRET");
+	private static final String _accessToken = System.getenv().get("TWITTER_ACCESS_TOKEN");
+	private static final String _accessTokenSecret = System.getenv().get("TWITTER_ACCESS_TOKEN_SECRET");
 
 //	private static final Twitter twitterInstance = getTwitterInstance();
 	private static final TwitterStream twitterStream = getTwitterStreamInstance();

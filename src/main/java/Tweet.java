@@ -25,6 +25,6 @@ public class Tweet {
 
 	@Override
 	public String toString() {
-		return "Username: " + this.username + " - " + this.text + " - " + this.date.toString();
+		return "Username: " + this.username + " \n " + this.text + " Date:\n" + this.date.toString();
 	}
 }

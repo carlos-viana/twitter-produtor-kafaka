@@ -12,7 +12,7 @@ public class TweetListener implements StatusListener {
 	@Override
 	public void onStatus(Status status) {
 		Tweet tweet = new Tweet(status.getUser().getName(), status.getText(), status.getCreatedAt());
-		producer.SendMessage("topic", tweet);
+		producer.SendMessage("my-topic", tweet);
 		logger.info("New Tweet: " + tweet.toString() + "\n\n");
 	}
 
